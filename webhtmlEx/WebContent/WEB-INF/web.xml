@@ -9,4 +9,28 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  	<servlet>
+  		<servlet-name>join</servlet-name>
+  		<!-- 실제 서블릿 클래스 이름(패키지 포함) -->
+  		<servlet-class>org.java.memberController.MemberJoin</servlet-class>
+  	</servlet>
+  	
+  	<servlet-mapping>
+		<servlet-name>join</servlet-name>  	
+  		<url-pattern>/MemberJoin.do</url-pattern>
+  	</servlet-mapping>
+  	
+  	<!-- 서블릿  매핑 -->
+  	<!-- 서블릿  생성 -->
+  	<servlet>
+  		<servlet-name>login</servlet-name>
+  		<servlet-class>org.java.memberConttroller.MemberLogin</servlet-class>
+  	</servlet>
+  	
+  	<servlet-mapping>
+  		<servlet-name>login11</servlet-name>
+  		<url-pattern>/MemberLogin.do</url-pattern>
+  	</servlet-mapping>
+  	
+  	
 </web-app>
