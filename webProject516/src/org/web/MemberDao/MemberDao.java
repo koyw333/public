@@ -18,7 +18,7 @@ public class MemberDao {
 		return MemberDao.dao;
 	}
 	
-	public int insert(String userId,String userPw,String userName,int userAge) {
+	public int insert(String userId,String userPw,String userName,String userEmail) {
 		
 		int rs=0;
 		
@@ -27,7 +27,7 @@ public class MemberDao {
 		String query="";
 		
 		conn=DBConnect.getConnection();
-		query="insert into member(userId,userPw,userName,userAge)  "
+		query="insert into member(userId,userPw,userName,userEmail)  "
 				+ " values(?,?,?,?);";
 		try {
 			pstm=conn.prepareStatement(query);
@@ -35,7 +35,7 @@ public class MemberDao {
 			pstm.setString(1, userId);
 			pstm.setString(2, userPw);
 			pstm.setString(3, userName);
-			pstm.setInt(4, userAge);
+			pstm.setString(4, userEmail);
 			
 			rs=pstm.executeUpdate();//회원 가입 성공 1
 			
@@ -48,9 +48,7 @@ public class MemberDao {
 			}catch(Exception e) {
 				e.printStackTrace();
 			}finally {}
-		}
-		
+		}	
 		return rs;
-	}
-	
+	}	
 }

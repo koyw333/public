@@ -5,19 +5,19 @@ public class memberDTO {
 	private String userId;
 	private String userPw;
 	private String userName;
-	private int userAge;
+	private String userEmail;
 	
 
 	public memberDTO() {
 		super();
 	}
 	
-	public memberDTO(String userId, String userPw, String userName, int userAge) {
+	public memberDTO(String userId, String userPw, String userName, String userEmail) {
 		super();
 		this.userId = userId;
 		this.userPw = userPw;
 		this.userName = userName;
-		this.userAge = userAge;
+		this.userEmail = userEmail;
 	}
 
 	public String getUserId() {
@@ -38,10 +38,10 @@ public class memberDTO {
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
-	public int getUserAge() {
-		return userAge;
+	public String getUserEmail() {
+		return userEmail;
 	}
-	public void setUserAge(int userAge) {
-		this.userAge = userAge;
+	public void setUserAge(String userEmail) {
+		this.userEmail = userEmail;
 	}
 }

@@ -33,13 +33,6 @@ for(String str:hobbyArr){
 	
 }
 
-
-
-
-z
-
-
-
 %>
 </body>
 </html>

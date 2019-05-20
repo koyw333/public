@@ -48,19 +48,12 @@ public class MemberController extends HttpServlet{
 			action.excuteQueryCommend(request, response);			
 			url=(String)request.getAttribute("url");//Commend에서 반환 대는 url
 			
-		}else if(basicURL.equals("/Update.do")) {
+		}else if(basicURL.equals("/Select.do")) {
 			
 		}
 		
 		RequestDispatcher dispatcher=request.getRequestDispatcher(url);
 		dispatcher.forward(request, response);// url(View)페이지로 request,response를 전송
-		
-		
-			
-		
-		
-		
-	}
-	
-	
+				
+	}	
 }

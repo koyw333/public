@@ -34,7 +34,7 @@ public class MemberController {
 		}else if(query.equals("exit")){
 			System.out.println("Á¾·á");
 		}else if(query.equals("idChecked")){
-			atcion = new IdCheck();
+			action = new IdCheck();
 			action.excuteQueryCommend();
 		}else if(query.equals("login")){
 			action= new loginDo();

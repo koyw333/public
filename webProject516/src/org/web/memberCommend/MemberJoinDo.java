@@ -18,11 +18,11 @@ public class MemberJoinDo implements MemberCommend {
 			String userId = request.getParameter("userId");
 			String userPw = request.getParameter("userPw");
 			String userName = request.getParameter("userName");
-			int userAge = Integer.parseInt(request.getParameter("userAge"));
+			String userEmail = request.getParameter("userEmail");
 			
 			//DAO
 			MemberDao dao = MemberDao.getInstance(); //ΩÃ±€≈Ê »£√‚
-			int rs = dao.insert(userId, userPw, userName, userAge);
+			int rs = dao.insert(userId, userPw, userName, userEmail);
 			
 			String url ="";
 			

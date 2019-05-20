@@ -11,8 +11,3 @@ public interface MemberCommend {
 	void excuteQueryCommend(HttpServletRequest request,HttpServletResponse response)
 						throws ServletException,IOException;
 }
-
-
-
-
-
