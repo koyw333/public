@@ -99,11 +99,6 @@ public class MemberDao {
 		
 		return lists;
 	}
-	
-	
-	
-	
-	
-	
+
 	
 }

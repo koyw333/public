@@ -23,6 +23,7 @@ public class MemberDAO {
     }
     
     public int insert(String userId,String userPw,String userName,String userEmail) {
+    	
         
         int rs=0;
         
@@ -69,7 +70,7 @@ public class MemberDAO {
         
         try {
             conn =DBConnect.getConnection(); //
-            query = "select userId, userPw, userEmail from member;";            
+            query = "select userId, userPw, userName, userEmail from joinTest;";            
             pstm = conn.prepareStatement(query);
             
             rs = pstm.executeQuery(); // 조회, DB 데이터를 get

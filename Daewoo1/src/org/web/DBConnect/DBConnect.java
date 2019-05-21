@@ -16,7 +16,7 @@ public class DBConnect {
         String url="jdbc:mysql://3.17.133.136/team1DB?useSSL=false&serverTimezone=UTC" + "&allowPublicKeyRetrieval=true";
         String user="team1";
         String password="Daewoo1team!";
-        String Driver = "com.my.jdbc.Driver";
+    
         
         try {
             Class.forName("com.mysql.jdbc.Driver");//드라이버 로드

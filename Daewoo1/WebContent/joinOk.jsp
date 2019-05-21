@@ -8,6 +8,6 @@
 </head>
 <body>
 	가입 성공
-	<a href = "/" >홈으로</a>
+	<a href = "Index.jsp" >홈으로</a>
 </body>
 </html>

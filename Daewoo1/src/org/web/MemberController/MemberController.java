@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.web.MemberCommend.MemberCommend;
 import org.web.MemberCommend.MemberJoinDo;
+import org.web.MemberCommend.MemberListDo;
 
 
 @WebServlet("*.do")
@@ -53,7 +54,7 @@ public class MemberController extends HttpServlet{
             action.excuteQueryCommend(request, response);            
             url=(String)request.getAttribute("url");//Commend에서 반환 url
         }else if(basicURL.equals("/MemberList.do")) {
-            action=new MemberJoinDo();
+            action=new MemberListDo();
             action.excuteQueryCommend(request, response);            
             url=(String)request.getAttribute("url");//Commend에서 반환 url
         }
