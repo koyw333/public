@@ -18,25 +18,23 @@ public class MemberJoinDo implements MemberCommend {
 			String userId=request.getParameter("userId");
 			String userPw=request.getParameter("userPw");
 			String userName=request.getParameter("userName");
-			String userEmail=request.getParameter("userEmail");
+			int userAge=Integer.parseInt(request.getParameter("userAge"));
 			
 			//DAO
 			MemberDao dao=MemberDao.getInstance();// 싱글톤 호출
-			int rs=dao.insert(userId, userPw, userName, userEmail);
+			int rs=dao.insert(userId, userPw, userName, userAge);
 
 			String url="";
 			
 			if(rs==1) {
 				System.out.println("회원 가입 성공");
-				url="joinOk.jsp";				
-				System.out.println("실패 Join 1");
+				url="/joinOk.jsp";				
 			}else {
 				System.out.println("회원 가입 실패");
-				url="joinNo.jsp";
-				System.out.println("실패 Join 2");
+				url="/joinNo.jsp";								
 			}
 			
 			request.setAttribute("url", url);
-			System.out.println("실패 Join 3");
 	}
+
 }

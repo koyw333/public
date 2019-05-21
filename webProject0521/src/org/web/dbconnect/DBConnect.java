@@ -10,24 +10,22 @@ public class DBConnect {
 		
 		Connection conn=null;
 		
-		String url="jdbc:mysql://3.17.133.136/joinTest?useSSL=false&serverTimezone=UTC"+"&allowPublicKeyRetrieval=true";
-		String user="team1";
-		String password="Daewoo1team!";
+		String url="jdbc:mysql://localhost:3306/javaStudy?useSSL=false&serverTimezone=UTC";
+		String user="root";
+		String password="12345";
 		
 		try {
 			Class.forName("com.mysql.jdbc.Driver");//드라이버 로드
 			System.out.println("드라이버OK");
-		
+
 			conn=DriverManager.getConnection(url, user, password);//DB연결
-			System.out.println("DB연결 OK");
+			System.out.println("DB연결 OK");			
 			
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
-			System.out.println("실패Connect1");
 		} catch (SQLException e) {
 			e.printStackTrace();
-			System.out.println("실패 Connect2");
-		} finally {}
+		}	
 		
 		return conn;
 	}

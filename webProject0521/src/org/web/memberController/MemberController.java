@@ -46,14 +46,22 @@ public class MemberController extends HttpServlet{
 		if(basicURL.equals("/JOIN.do")) {
 			action=new MemberJoinDo();
 			action.excuteQueryCommend(request, response);			
-			url=(String)request.getAttribute("url");//Commend에서 반환 대는 url
-			System.out.println("실패 Controller1");
-		}else if(basicURL.equals("/Select.do")) {
-			System.out.println("실패 Controller3");
+			url=(String)request.getAttribute("url");//Commend에서 반환 url
+		}else if(basicURL.equals("/MemberList.do")) {
+			action=new MemberJoinDo();
+			action.excuteQueryCommend(request, response);			
+			url=(String)request.getAttribute("url");//Commend에서 반환 url
 		}
 		
 		RequestDispatcher dispatcher=request.getRequestDispatcher(url);
 		dispatcher.forward(request, response);// url(View)페이지로 request,response를 전송
-		System.out.println("실패 Controller2");
-	}	
+		
+		
+			
+		
+		
+		
+	}
+	
+	
 }

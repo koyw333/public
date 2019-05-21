@@ -41,12 +41,15 @@ public class MemberDao {
 			
 		} catch (SQLException e) {
 			e.printStackTrace();
+			System.out.println("실패3");
 		}finally {
 			try {				
 				if(conn!=null) conn.close();
-				if(pstm!=null) pstm.close();				
+				if(pstm!=null) pstm.close();
+				System.out.println("실패4");
 			}catch(Exception e) {
 				e.printStackTrace();
+				System.out.println("실패5");
 			}finally {}
 		}
 		
