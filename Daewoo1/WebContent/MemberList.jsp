@@ -12,15 +12,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<style type="text/css">
-@import url ("/css/style.css");
-{
-    color: red;
-}
-</style>
 <title>Insert title here</title>
-
+<%@ include file = "header.jsp" %>
 </head>
+
 <body>
 	
 		 <!-- 테이블 이용 -->

@@ -9,11 +9,7 @@
 <body>
 
 <div>
-
-<button><a href ="formEx.jsp"> 회원 가입</a></button>
-<button><a href ="MemberList.do"> 회원 목록</a></button>
-<button><a href ="Login.jsp"> 로그인</a></button>
-<button><a href ="bord.jsp"> 게시판</a></button>
+<%@ include file = "header.jsp" %>
 </div>
 </body>
 </html>
