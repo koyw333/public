@@ -24,7 +24,7 @@ public class MemberListDo implements MemberCommend{
 		request.setAttribute("members", members);
 		
 		//URL
-		request.setAttribute("url", "memberList.jsp");
+		request.setAttribute("url", "MemberList.jsp");
 		
 	}
 

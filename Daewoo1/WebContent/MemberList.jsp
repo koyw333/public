@@ -22,36 +22,7 @@
 
 </head>
 <body>
-	<%--
-	<h1>회원리스트</h1>
-	<%
-	for(MemberDTO DTO:members){
-		out.print("아이디 : " + DTO.getUserId()+", ");
-		out.print("비밀번호 : " + DTO.getUserPw()+", ");
-		out.print("이름 : " + DTO.getUserName()+", ");
-		out.print("이메일 : " + DTO.getuserEmail()+", ");
-	}
-	%>
-
-		 <h1>회원리스트</h1>
-		 <%
-		 
-		 for(MemberDTO dto : members){
-		 
-		 %>
-		 
-		 <div> 
-		 		아이디 : <%= dto.getUserId() %>, 비밀번호 : <%= dto.getUserPw() %>,
-		 	        이름 :  <%= dto.getUserName() %>, 이메일 : <%= dto.getuserEmail() %>
-		 </div>
-		 
-		 <%
-		 
-		 }
-		 
-		 %>
-		--%> 	 
-		
+	
 		 <!-- 테이블 이용 -->
 		 	<h1>회원리스트</h1>
 		 <table style = "width: 600px; text-align: center; border: 5px solid #ccc; margin: 20px;">

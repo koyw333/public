@@ -67,7 +67,7 @@ public class MemberDao {
 		
 		try {
 			conn =DBConnect.getConnection(); //
-			query = "select userId, userPw, userAge from member;";			
+			query = "select userId, userPw, userName ,userAge from member;";			
 			pstm = conn.prepareStatement(query);
 			
 			rs = pstm.executeQuery(); // 조회, DB 데이터를 get

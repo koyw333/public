@@ -25,4 +25,30 @@
     <!--
     <Manager pathname="" />
     -->
+  
+ 	 <Resource name="jdbc/team1"
+    	auth="Container"
+    	type="javax.sql.DataSource"
+    	username="root"
+    	password="12345"
+    	dirverClassName="com.mysql.jdbc.Driver"
+    	url="jdbc:mysql://localhost:3306/javaStudy?useSSL=false"
+    	logintimeout="100"
+    	maxActive="500"
+    	maxIdle="100"/> 
+    	
+<!--   
+    <Resource name="jdbc/team1"
+    	auth="Container"
+    	type="javax.sql.DataSource"
+    	username="team1"
+    	password="Daewoo1team!"
+    	dirverClassName="com.mysql.jdbc.Driver"
+    	url="jdbc:mysql://3.17.133.136/joinTest?useSSL=false&serverTimezone=UTC"+"&allowPublicKeyRetrieval=true";
+    	logintimeout="999"
+    	maxActive="500"
+    	maxIdle="100"/>
+ -->
+    
+    
 </Context>
