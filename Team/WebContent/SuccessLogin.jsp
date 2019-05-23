@@ -7,10 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%@ include file = "header.jsp" %>
-
-			JavaStudy Project
-
-<%@ include file = "footer.jsp" %>
+	로그인 성공!!! <br>
+	<a href = "ConfirmLogin.jsp"> | 로그인 세션값 확인 |</a>
 </body>
 </html>

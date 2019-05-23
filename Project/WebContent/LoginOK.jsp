@@ -7,10 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%@ include file = "header.jsp" %>
-
-			JavaStudy Project
-
-<%@ include file = "footer.jsp" %>
+	로그인 성공
 </body>
 </html>

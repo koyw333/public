@@ -24,7 +24,7 @@ public class loginCheck extends HttpServlet {
     private String userId, userPw, userName;
     private int userAge;
     
-    private String driver =  "oracle.jdbc.driver.OracleDriver";
+    private String driver = "oracle.jdbc.driver.OracleDriver";
     private String dbURL =  "jdbc:mysql://3.17.133.136/team1DB?useSSL=false&serverTimezone=UTC" + "&allowPublicKeyRetrieval=true";
     private String hostId = "team1";
     private String hostPw = "Daewoo1team!";

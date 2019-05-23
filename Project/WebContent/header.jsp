@@ -7,10 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%@ include file = "header.jsp" %>
+<a href = "Index.jsp">메인화면</a>
+<a href = "MemberLogin.jsp"> 로그인 </a>
+<a href = "MemberJoin.jsp"> 회원가입 </a>
+<a href = "MemberList.do"> 조 회</a><br><br>
 
-			JavaStudy Project
-
-<%@ include file = "footer.jsp" %>
 </body>
 </html>
