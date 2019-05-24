@@ -143,21 +143,20 @@ public class MemberDAO {
 		
 	}
     //·Î±×ÀÎ
-	public int Login(String userId, String userPw, HttpServletRequest request, HttpServletResponse response)
+	public int Login(String userId, String userPw)
 	throws ServletException, IOException{
 		
 		PreparedStatement pstm = null;
 		ResultSet rs = null;
 
-		String query="select*from joinTest where userId=? and userPw=?;";
+		String query="select * from joinTest where userId=? and userPw=?;";
 		System.out.println("query ok");
 		try {
 			pstm = conn.prepareStatement(query);
 			
 			pstm.setString(1, userId);	
 			pstm.setString(2, userPw);
-			pstm.setString(3, userName);
-			pstm.setString(4, userEmail);
+
 			System.out.println(userPw);
    			rs = pstm.executeQuery();//
 			System.out.println("rs ok");
@@ -166,6 +165,7 @@ public class MemberDAO {
 	                return 1;
 
 			}else{
+				System.out.println("dao.else");
 				return 0 ;
 				}
 			}

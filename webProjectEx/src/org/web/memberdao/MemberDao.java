@@ -140,5 +140,43 @@ public class MemberDao {
 		return rs1;
 	}
 
+	public int login(String userId, String userPw) {
+		int rs1 =0;
+		
+		Connection conn = null;
+		PreparedStatement pstm = null;
+		ResultSet rs =null;
+		String query = "";
+		
+		conn = DBConnect.getConnection();
+		query = "select count(*) from member where userId=?"; //return int
+		
+		try {
+			pstm=conn.prepareStatement(query);
+			pstm.setString(1, userId);
+			pstm.executeQuery();
+			
+			while(rs.next()) {
+				rs1=rs.getInt(1); //아이디 있으면 1
+			}
+			
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if(conn!=null) conn.close();
+				if(pstm!=null) pstm.close();
+				if(rs!=null) rs.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}finally {
+				
+			}
+		}
+		
+		return rs1;
+	}
+
 	
 }

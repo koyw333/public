@@ -52,6 +52,10 @@ public class MemberController extends HttpServlet{
 			action=new MemberListDo();
 			action.excuteQueryCommend(request, response);			
 			url=(String)request.getAttribute("url");//Commend에서 반환 url
+		}else if(basicURL.equals("Login.do")) {
+			action=new MemberListDo();
+			action.excuteQueryCommend(request, response);			
+			url=(String)request.getAttribute("url");//Commend에서 반환 url
 		}
 		
 		RequestDispatcher dispatcher=request.getRequestDispatcher(url);

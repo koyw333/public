@@ -1,23 +1,10 @@
-<%@page import="org.web.MemberDTO.MemberDTO"%>
+<%@page import="MemberDTO.MemberDTO"%>
 <%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-
-<%
-	if(session.getAttribute("sessionId")==null){
-		out.print("<script>");
-		out.print("alert('로그인 후에 이용하세요')");
-		out.print("location.href='login.jsp'");
-		out.print("</script>");
-		out.close();
-	}
-
-
-%>
-
 <meta charset="UTF-8">
 <title>회원 리스트</title>
 
@@ -34,7 +21,7 @@
 		<%@ include file = "header.jsp" %> <br><br><br><br>
 	</div>
 	
-	<div style="width : 100%; height : 80%; background : #313F35">
+	<div style="width : 100%; height : 80%">
 		<h1> 회원리스트 </h1>
 		<table style = "width:500px; border:1px solid black; border-collapse:collapse;">
 			<tr>
@@ -49,8 +36,8 @@
 		%>
 		
 			<tr>
-				<td> <%=dto.getUserId() %> </td>
-				<td> <%=dto.getUserPw() %> </td>
+				<td> <%=dto.getUserID() %> </td>
+				<td> <%=dto.getUserPW() %> </td>
 				<td> <%=dto.getUserName() %> </td>
 				<td> <%=dto.getUserEmail() %> </td>
 			</tr>

@@ -22,8 +22,8 @@ public class MemberLoginDo implements QueryCommend {
 		String userId = request.getParameter("userId");
 		String userPw = request.getParameter("userPw");
 		System.out.println("getParameber pass");
-		int rs = dao.Login(userId, userPw, request, response);
-		
+		int rs = dao.Login(userId, userPw);
+		System.out.println("userid,userpw");
 		if (rs == 1) {
 			System.out.println("로그인 성공");
 			request.setAttribute("url", "LoginOK.jsp");
