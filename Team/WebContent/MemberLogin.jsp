@@ -4,26 +4,35 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+	<title>Insert title here</title>
+	<link rel="stylesheet" href="auth.css">
 </head>
 <body>
+<%@ include file = "header.jsp" %>
+<div class="lowin">
 
-	<div style="width : 100%; height : 10%; background : #00FC86">
-		<%@ include file = "header.jsp" %> <br><br><br><br>
-	</div>
-	
-	<div style="width : 100%; height : 80%; background : #313F35">
-		로그인!! <br>
-		<form action = "MemberLogin.do" method = "post" id = "login">
-			아이디 : <input type = "text" name = "userID" id = "userID"> <br>
-			비밀번호 : <input type = "password" name = "userPW" id = "userPW"> <br>
-			<input type = "submit" value = "로그인"> <br><br>
-		</form>
-	</div>
-	
-	<div style="width : 100%; height : 10%; background : #00FC86">
-		<br><br><br><br><%@ include file = "footer.jsp" %>	
-	</div>
+		<div class="lowin-wrapper">
+			<div class="lowin-box lowin-login">
+				<div class="lowin-box-inner">
+					<form action = "MemberLogin.do" method = "post" id = "login">
+						<p>로그인 하세요</p>
+						<div class="lowin-group">
+							<label>ID<a href="#" class="login-back-link">Sign in?</a></label>
+							<input type="text" autocomplete="email" name="userID" class="lowin-input">
+						</div>
+						<div class="lowin-group password-group">
+							<label>비밀번호 </label>
+							<input type="password" name="userPW" autocomplete="current-password" class="lowin-input">
+						</div>
+						<button class="lowin-btn login-btn">
+							Sign In
+						</button>
+
+					</form>
+				</div>
+			</div>
+		</div>
+</div>
 
 </body>
 </html>

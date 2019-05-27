@@ -8,17 +8,13 @@
 </head>
 <body>
 
-	<div style="width : 100%; height : 10%; background : #00FC86">
-		<%@ include file = "header.jsp" %> <br><br><br><br>
-	</div>
+
+		<%@ include file = "header.jsp" %>
+
 	
-	<div style="width : 100%; height : 80%; background : #313F35">
-	
-	</div>
-	
-	<div style="width : 100%; height : 10%; background : #00FC86">
-		<br><br><br><br><%@ include file = "footer.jsp" %>	
-	</div>
+
+		<%@ include file = "footer.jsp" %>	
+
 	
 </body>
 </html>

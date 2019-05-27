@@ -9,9 +9,41 @@
 </head>
 <body>
 
-	<div style="width : 100%; height : 10%; background : #00FC86">
-		<%@ include file = "header.jsp" %> <br><br><br><br>
+		<%@ include file = "header.jsp" %>
+<div class="lowin">
+
+		<div class="lowin-wrapper">
+			<div class="lowin-box lowin-login">
+				<div class="lowin-box-inner">
+					<form action = "MemberJoin.do" method = "post" id = "login">
+						<p>회원가입</p>
+						<div class="lowin-group">
+							<label>아이디<a href="#" class="login-back-link">Sign in?</a></label>
+							<input type="text" autocomplete="email" name="userID" class="lowin-input">
+						</div>
+						<div class="lowin-group password-group">
+							<label>비밀번호 </label>
+							<input type="password" name="userPW" autocomplete="current-password" class="lowin-input">
+						</div>
+						<div class="lowin-group">
+							<label>이름<a href="#" class="login-back-link">Sign in?</a></label>
+							<input type="text" autocomplete="email" name="userName" class="lowin-input">
+						</div>
+						<div class="lowin-group">
+							<label>이메일<a href="#" class="login-back-link">Sign in?</a></label>
+							<input type="text" autocomplete="email" name="userEmail" class="lowin-input">
+						</div>
+						<button class="lowin-btn login-btn">
+							rkdlq
+						</button>
+
+					</form>
+				</div>
+			</div>
+		</div>
 	</div>
+	
+	
 	
 	<div style="width : 100%; height : 80%; background : #313F35">
 		회원가입!! <br>
